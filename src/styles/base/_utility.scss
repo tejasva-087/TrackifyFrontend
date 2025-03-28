@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as *;
+
+.icon {
+  &--sml {
+    width: $p3;
+    height: $p3;
+  }
+
+  &--mid {
+    width: $p2;
+    height: $p2;
+  }
+
+  &--big {
+    width: $p1;
+    height: $p1;
+  }
+}

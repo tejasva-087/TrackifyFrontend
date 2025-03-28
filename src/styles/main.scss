@@ -1,0 +1,35 @@
+// base
+@forward "./abstracts/variables";
+@forward "./abstracts/mixins";
+
+// abstracts
+@forward "./base/base";
+@forward "./base/typography";
+@forward "./base/utility";
+@forward "./base/amination";
+
+// components
+// @forward "./components/";
+
+// layouts
+// @forward "./layouts/"
+
+// pages
+// @forward "./pages/"
+
+// themes
+@forward "./themes/darkMode";
+
+.box {
+  border: 0.1rem solid var(--color-white-tertiary);
+  padding: 4.8rem 6.4rem;
+  border-radius: 1.6rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  
+}
