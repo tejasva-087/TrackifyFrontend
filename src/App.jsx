@@ -1,12 +1,9 @@
+import Navigation from "./components/Navigation";
+
+import { LineSegments } from "@phosphor-icons/react";
+
 function App() {
-  return (
-    <div className="flex-center">
-      <div className="box">
-        <h className="heading-primary">Heading</h>
-        <p className="text-primary">Hello world</p>
-      </div>
-    </div>
-  )
+  return <Navigation />;
 }
 
 export default App;

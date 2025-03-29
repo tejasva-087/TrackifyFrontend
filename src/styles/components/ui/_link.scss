@@ -1,0 +1,29 @@
+@use "../../abstracts/variables" as *;
+
+.link {
+  &:link,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+    transition: all 0.3s;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.4rem var(--color-primary) inset;
+    border-radius: 0.8rem;
+  }
+
+  &--primary {
+    background-color: var(--color-primary);
+    color: $color-white-primary;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+  }
+}

@@ -1,0 +1,16 @@
+@use "../../abstracts/variables" as *;
+
+.btn {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--color-primary);
+    color: $color-white-primary;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+  }
+}
