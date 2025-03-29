@@ -23,6 +23,10 @@
   justify-content: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .gap {
   &--sml {
     gap: 0.6rem;
@@ -35,4 +39,8 @@
   &--big {
     gap: 1.6rem;
   }
+}
+
+.width-full {
+  width: 100%;
 }

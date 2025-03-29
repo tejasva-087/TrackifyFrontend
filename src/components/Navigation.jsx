@@ -2,8 +2,9 @@ import { useState } from "react";
 
 import Button from "./ui/Button";
 import Logo from "./ui/logo";
+import UserMenu from "./ui/UserMenu";
 
-import { Plus, Moon, CaretDown, Sun } from "@phosphor-icons/react";
+import { Plus, Moon, Sun } from "@phosphor-icons/react";
 
 function Navigation() {
   const [theme, setTheme] = useState(
@@ -42,14 +43,7 @@ function Navigation() {
         </div>
 
         {/* user menu */}
-        <div className="user-menu flex-center gap--sml">
-          <img
-            src="https://api.dicebear.com/9.x/fun-emoji/svg?seed=16761343"
-            alt="user-profile-img"
-            className="user-img"
-          />
-          <CaretDown weight="light" className="icon--sml" />
-        </div>
+        <UserMenu userName={"Tejasva Khandelwal"} />
       </div>
     </header>
   );
