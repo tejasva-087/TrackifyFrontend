@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as *;
+
+.date-box {
+  &--primary {
+    background-color: var(--color-primary) !important;
+    border-color: transparent !important;
+    color: $color-white-primary;
+  }
+}

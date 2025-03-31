@@ -13,15 +13,18 @@
 @forward "./components/ui/link";
 @forward "./components/ui/button";
 @forward "./components/ui/userMenu";
+@forward "./components/ui/box";
+@forward "./components/ui/visualIcons";
 
 // components
 @forward "./components/navigation";
+@forward "./components/statBox";
+@forward "./components/dateBox";
+@forward "./components/transactionBox";
 
 // layouts
 // @forward "./layouts/"
-
 // pages
 // @forward "./pages/"
-
 // themes
 @forward "./themes/darkMode";

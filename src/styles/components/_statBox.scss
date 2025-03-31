@@ -1,0 +1,11 @@
+.stats-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  &-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
