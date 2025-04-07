@@ -18,10 +18,12 @@
     top: 60%;
     right: 0;
     width: 15vw;
-    padding: 0.6rem;
+    padding: 0.8rem;
     border-radius: 0.8rem;
     border: solid 0.1rem var(--color-white-tertiary);
     background-color: var(--color-white-primary);
+    transition: all 0.3s;
+    z-index: 999;
 
     visibility: hidden;
     pointer-events: none;
@@ -32,8 +34,7 @@
       cursor: pointer;
       position: relative;
 
-      &:hover,
-      &:active {
+      &:hover {
         & > .transaction-box-menu {
           visibility: visible;
           pointer-events: all;

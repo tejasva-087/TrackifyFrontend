@@ -3,6 +3,7 @@ import Box from "./components/ui/Box";
 import Button from "./components/ui/Button";
 import Dates from "./components/ui/DateBox";
 import StatsBox from "./components/ui/StatBox";
+import LineGraph from "./components/ui/LineGraph";
 
 import {
   Wallet,
@@ -41,10 +42,13 @@ function App() {
         </div>
         <div className="transaction-box-container width-full">
           <TransactionBox type="incomming" />
-          {/* <TransactionBox type="outgoing" />
           <TransactionBox type="outgoing" />
-          <TransactionBox type="outgoing" /> */}
+          <TransactionBox type="outgoing" />
+          <TransactionBox type="outgoing" />
         </div>
+      </Box>
+      <Box>
+        <LineGraph />
       </Box>
     </>
   );
