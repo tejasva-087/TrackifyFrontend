@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Button from "./Button";
+import Button from "./ui/Button";
 
 import { CaretDown, Gear, SignOut } from "@phosphor-icons/react";
 

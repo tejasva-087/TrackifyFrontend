@@ -5,7 +5,7 @@ function VisualIcons({ type }) {
     <div>
       {type === "incomming" && (
         <ArrowDownRight
-          className="visual-icon visual-icon--incomming icon--big icon--bold"
+          className="visual-icon visual-icon--incoming icon--big icon--bold"
           weight="bold"
         />
       )}

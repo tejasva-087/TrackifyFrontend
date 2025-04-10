@@ -1,8 +1,8 @@
-import Box from "./Box";
+import Box from "./ui/Box";
 
-function StatsBox({ amount, icon, label }) {
+function Stats({ amount, icon, label, className }) {
   return (
-    <Box className="stats-box">
+    <Box className={`stats-box ${className}`}>
       <h3 className="heading-tertiary">₹{amount}</h3>
       <div className="stats-box-label">
         {icon}
@@ -12,4 +12,4 @@ function StatsBox({ amount, icon, label }) {
   );
 }
 
-export default StatsBox;
+export default Stats;

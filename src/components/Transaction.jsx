@@ -1,8 +1,8 @@
-import VisualIcons from "./VisualIcons";
-import Button from "./Button";
+import VisualIcons from "./ui/VisualIcons";
+import Button from "./ui/Button";
 import { DotsThree, PencilSimple, Trash } from "@phosphor-icons/react";
 
-function TransactionBox({ type }) {
+function Transaction({ type }) {
   return (
     <div className="transaction-box width-full">
       <VisualIcons type={type} />
@@ -32,4 +32,4 @@ function TransactionBox({ type }) {
   );
 }
 
-export default TransactionBox;
+export default Transaction;

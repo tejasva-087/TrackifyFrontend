@@ -1,20 +1,14 @@
-import { useState } from "react";
+import { useEffect } from "react";
 
 import Button from "./ui/Button";
 import Logo from "./ui/logo";
-import UserMenu from "./ui/UserMenu";
+import UserMenu from "./UserMenu";
 
 import { Plus, Moon, Sun } from "@phosphor-icons/react";
 
-function Navigation() {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem("theme") || "light"
-  );
-
+function Navigation({ theme, setTheme, className }) {
   const changeTheme = function () {
     document.body.classList.toggle("dark-mode");
-
-    // Storimg the current theme in local storage
     const currentTheme = document.body.classList.contains("dark-mode")
       ? "dark"
       : "light";
@@ -22,8 +16,16 @@ function Navigation() {
     setTheme(currentTheme);
   };
 
+  useEffect(() => {
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [theme]);
+
   return (
-    <header className="nav-bar">
+    <header className={`nav-bar ${className}`}>
       {/* Logo */}
       <Logo link="#" />
 

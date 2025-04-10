@@ -5,5 +5,9 @@
     background-color: var(--color-primary) !important;
     border-color: transparent !important;
     color: $color-white-primary;
+
+    & > * {
+      color: $color-white-primary;
+    }
   }
 }

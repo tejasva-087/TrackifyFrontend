@@ -6,25 +6,27 @@
 @forward "./base/base";
 @forward "./base/typography";
 @forward "./base/utility";
-@forward "./base/amination";
+@forward "./base/animation";
 
 // UI
 @forward "./components/ui/logo";
 @forward "./components/ui/link";
 @forward "./components/ui/button";
-@forward "./components/ui/userMenu";
 @forward "./components/ui/box";
 @forward "./components/ui/visualIcons";
 
 // components
 @forward "./components/navigation";
-@forward "./components/statBox";
-@forward "./components/dateBox";
-@forward "./components/transactionBox";
+@forward "./components/stats";
+@forward "./components/date";
+@forward "./components/transaction";
+@forward "./components/userMenu";
+@forward "./components/lineGraph";
 
+// @forward "./components/ui/"
 // layouts
 // @forward "./layouts/"
 // pages
-// @forward "./pages/"
-// themes
-@forward "./themes/darkMode";
+@forward "./pages/dashboard";
+// theme
+@forward "./theme/darkMode";
