@@ -34,7 +34,7 @@ function LineGraph({ date, amount }) {
             valueFormatter: (value) => `Amount: ₹${value}`,
           },
         ]}
-        height={300}
+        height={280}
         width={chartWidth}
       />
     </Box>

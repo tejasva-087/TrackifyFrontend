@@ -3,7 +3,7 @@ import { ArrowDownRight, ArrowUpLeft, X, Check } from "@phosphor-icons/react";
 function VisualIcons({ type }) {
   return (
     <div>
-      {type === "incomming" && (
+      {type === "incoming" && (
         <ArrowDownRight
           className="visual-icon visual-icon--incoming icon--big icon--bold"
           weight="bold"
