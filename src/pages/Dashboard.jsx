@@ -12,6 +12,8 @@ import {
   Wallet,
   MoneyWavy,
 } from "@phosphor-icons/react";
+import AutoPay from "../components/AutoPay";
+import LoansRepayments from "../components/LoansRepayments";
 
 function Dashboard({ theme, setTheme }) {
   return (
@@ -33,10 +35,11 @@ function Dashboard({ theme, setTheme }) {
           className="dashboard-spending-stats"
         ></Stats>
         <Box className="dashboard-transactions">
-          <div className="flex-center gap--mid">
+          <div className="flex-center gap--mid width-full">
             <Button className="btn--primary flex-center">
               <CaretLeft className="icon--big" weight="light" />
             </Button>
+            <Date date={24} month="Apr"></Date>
             <Date date={24} month="Apr"></Date>
             <Date date={24} month="Apr"></Date>
             <Date date={24} month="Apr"></Date>
@@ -70,8 +73,34 @@ function Dashboard({ theme, setTheme }) {
           />
         </Box>
 
-        <Box className="dashboard-auto-pay">AUTO PAY</Box>
-        <Box className="dashboard-loans-repayments">Loans and repayments</Box>
+        <Box className="dashboard-auto-pay">
+          <h3 className="heading-tertiary align-center margin-bottom--sml">
+            Auto pay
+          </h3>
+          <div className="auto-pay-container">
+            <AutoPay amount={299} days={90} service="spotify" />
+            <AutoPay amount={299} days={90} service="spotify" />
+            <AutoPay amount={299} days={90} service="spotify" />
+            <AutoPay amount={299} days={90} service="spotify" />
+            <AutoPay amount={299} days={90} service="spotify" />
+          </div>
+        </Box>
+        <Box className="dashboard-loans-repayments">
+          <h3 className="heading-tertiary align-center margin-bottom--sml">
+            Loans and Repayments
+          </h3>
+          <div className="loans-repayments-container">
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+            <LoansRepayments name="Deepak" amount={120} />
+          </div>
+        </Box>
       </div>
     </>
   );

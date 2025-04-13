@@ -48,3 +48,31 @@
 .height-full {
   height: 100%;
 }
+
+.margin-bottom {
+  &--sml {
+    margin-bottom: $p3;
+  }
+
+  &--mid {
+    margin-bottom: $p2;
+  }
+
+  &--big {
+    margin-bottom: $p1;
+  }
+}
+
+.padding-bottom {
+  &--sml {
+    padding-bottom: $p3;
+  }
+
+  &--mid {
+    padding-bottom: $p2;
+  }
+
+  &--big {
+    padding-bottom: $p1;
+  }
+}

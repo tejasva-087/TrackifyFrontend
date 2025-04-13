@@ -38,4 +38,16 @@
       background-color: var(--color-primary-dark);
     }
   }
+
+  &--outline {
+    border: 0.1rem solid var(--color-primary);
+    background-color: transparent;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+
+    & > * {
+      color: var(--color-primary);
+    }
+  }
 }
