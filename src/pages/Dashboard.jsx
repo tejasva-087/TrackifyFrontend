@@ -35,7 +35,7 @@ function Dashboard({ theme, setTheme }) {
           className="dashboard-spending-stats"
         ></Stats>
         <Box className="dashboard-transactions">
-          <div className="flex-center gap--mid width-full">
+          <div className="dashboard-transactions-dates flex-center gap--mid width-full">
             <Button className="btn--primary flex-center">
               <CaretLeft className="icon--big" weight="light" />
             </Button>
@@ -50,6 +50,9 @@ function Dashboard({ theme, setTheme }) {
           </div>
           <div className="transaction-box-container">
             <Transaction type="incoming" />
+            <Transaction type="outgoing" />
+            <Transaction type="outgoing" />
+            <Transaction type="outgoing" />
             <Transaction type="outgoing" />
             <Transaction type="outgoing" />
             <Transaction type="outgoing" />

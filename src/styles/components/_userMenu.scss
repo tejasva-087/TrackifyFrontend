@@ -19,7 +19,7 @@
     right: 0;
 
     padding: 0.8rem 1.2rem;
-    z-index: 999;
+    z-index: 999999;
   }
 
   &-nav {
@@ -29,6 +29,21 @@
     border-radius: 1.2rem;
     padding: 1.6rem 2.4rem;
     text-align: center;
+
+    // 900 px
+    @media (max-width: 56.25em) {
+      width: 30vw;
+    }
+
+    // 600 px
+    @media (max-width: 37.5em) {
+      width: 40vw;
+    }
+
+    // 400 px
+    @media (max-width: 25em) {
+      width: 70vw;
+    }
   }
 
   &-figure {
