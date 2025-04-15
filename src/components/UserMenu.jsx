@@ -21,17 +21,19 @@ function UserMenu({ className = "", userImageSeed }) {
         {/* MENU OPTIONS OPEN IF HOVERED*/}
         <div className="border border-[var(--color-white-tertiary)] bg-[var(--color-white-primary)] pr-10 pl-10 pt-12 pb-12 w-[20vw] rounded-2xl flex flex-col gap-8">
           {/* USER MENU HEADER */}
-          <figcaption className="flex flex-col items-center gap-4 border-b border-[var(--color-white-tertiary)] pb-8">
+          <figure className="flex flex-col items-center gap-4 border-b border-[var(--color-white-tertiary)] pb-8">
             <img
               src={`https://api.dicebear.com/9.x/fun-emoji/svg?seed=${userImageSeed}&backgroundColor=F9D05B`}
               className="w-16 h-16 rounded-xl"
               alt="User's avatar"
             />
-            <caption className="text-4xl font-bold">Tejasva Khandelwal</caption>
-          </figcaption>
+            <figcaption className="text-4xl font-bold">
+              Tejasva Khandelwal
+            </figcaption>
+          </figure>
 
           {/* USER MENU OPTIONS */}
-          <div>
+          <div className="flex flex-col gap-3 ">
             <Link
               href="/settings"
               className="p-4 transition hover:pointer hover:bg-[var(--color-white-secondary)] rounded-xl"

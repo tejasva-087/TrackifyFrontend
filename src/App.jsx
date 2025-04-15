@@ -1,33 +1,35 @@
-import React from "react";
+import { useEffect } from "react";
 
-import Logo from "./components/ui/logo";
-import Button from "./components/ui/Button";
+import { colors } from "./config.js";
 
-import { Plus, Sun } from "@phosphor-icons/react";
-import UserMenu from "./components/UserMenu";
+import Navigation from "./components/Navigation.jsx";
+import LineGraph from "./components/LineGraph.jsx";
 
 function App() {
+  useEffect(() => {
+    const root = document.documentElement;
+
+    root.style.setProperty("--color-primary", colors.colorPrimary);
+    root.style.setProperty("--color-green", colors.colorGreen);
+    root.style.setProperty("--color-red", colors.colorRed);
+    root.style.setProperty("--color-black-primary", colors.colorBlackPrimary);
+    root.style.setProperty(
+      "--color-black-secondary",
+      colors.colorBlackSecondary
+    );
+    root.style.setProperty("--color-black-tertiary", colors.colorBlackTertiary);
+    root.style.setProperty("--color-white-primary", colors.colorWhitePrimary);
+    root.style.setProperty(
+      "--color-white-secondary",
+      colors.colorWhiteSecondary
+    );
+    root.style.setProperty("--color-white-tertiary", colors.colorWhiteTertiary);
+  }, []);
   return (
-    <header className="flex justify-between items-center p-8 border-b border-[var(--color-white-tertiary)]">
-      <Logo />
-      <div className="flex items-center gap-6">
-        <div className="flex items-center gap-2">
-          <Button>
-            <Plus
-              className=" bg-[var(--color-primary)] text-[var(--color-white-primary)] rounded-xl p-3 w-14 h-14"
-              weight="light"
-            />
-          </Button>
-          <Button onClick={() => alert("Theme changed")} disabled="disabled">
-            <Sun
-              className=" bg-[var(--color-primary)] text-[var(--color-white-primary)] rounded-xl p-3 w-14 h-14"
-              weight="light"
-            />
-          </Button>
-        </div>
-        <UserMenu userImageSeed={15313} />
-      </div>
-    </header>
+    <>
+      <Navigation />
+      <LineGraph />
+    </>
   );
 }
 
