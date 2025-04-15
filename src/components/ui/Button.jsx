@@ -1,9 +1,16 @@
-function Button({ children, type = "button", onClick, className, color }) {
+function Button({
+  className = "",
+  type = "button",
+  disabled = false,
+  onClick,
+  children,
+}) {
   return (
     <button
-      type={type}
-      className={`btn btn--${color} ${className}`}
+      className={`${className} cursor-pointer`}
       onClick={onClick}
+      type={type}
+      disabled={disabled}
     >
       {children}
     </button>

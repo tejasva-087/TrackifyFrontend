@@ -1,4 +1,18 @@
+@import "tailwindcss";
+
 @font-face {
   font-family: Satoshi-Variable;
-  src: url('./assets/font/Satoshi-Variable.ttf');
+  src: url("./assets/font/Satoshi-Variable.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Satoshi-Variable, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--color-black-secondary);
 }

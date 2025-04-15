@@ -1,34 +1,5 @@
-// base
-@forward "./abstracts/variables";
-@forward "./abstracts/mixins";
-
-// abstracts
-@forward "./base/base";
-@forward "./base/typography";
-@forward "./base/utility";
-@forward "./base/animation";
-
-// UI
-@forward "./components/ui/logo";
-@forward "./components/ui/link";
-@forward "./components/ui/button";
-@forward "./components/ui/box";
-@forward "./components/ui/visualIcons";
+// abstract
+@use "./abstract/variables";
 
 // components
-@forward "./components/navigation";
-@forward "./components/stats";
-@forward "./components/date";
-@forward "./components/transaction";
-@forward "./components/autoPay";
-@forward "./components/loansRepayments";
-@forward "./components/userMenu";
-@forward "./components/lineGraph";
-
-// @forward "./components/ui/"
-// layouts
-// @forward "./layouts/"
-// pages
-@forward "./pages/dashboard";
-// theme
-@forward "./theme/darkMode";
+@use "./components/userMenu";

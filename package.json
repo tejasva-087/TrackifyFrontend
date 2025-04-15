@@ -1,5 +1,5 @@
 {
-  "name": "trackifyfrontend",
+  "name": "Trackify frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,13 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^7.0.2",
-    "@mui/x-charts": "^7.28.0",
     "@phosphor-icons/react": "^2.1.7",
+    "@tailwindcss/vite": "^4.1.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
@@ -27,7 +25,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
-    "sass": "^1.86.0",
+    "sass": "^1.86.3",
     "vite": "^6.2.0"
   }
 }

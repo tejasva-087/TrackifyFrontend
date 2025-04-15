@@ -1,17 +1,15 @@
-import Link from "./Link";
 import { LineSegments } from "@phosphor-icons/react";
 
-function Logo({ link }) {
+function logo({ className }) {
   return (
-    <Link link={link} className="flex-center">
-      <figure className="logo flex-center">
-        <div className="logo-img flex-center">
-          <LineSegments weight="light" className="icon--big" />
-        </div>
-        <figcaption className="font-mid">Trackify</figcaption>
-      </figure>
-    </Link>
+    <div className={`logo ${className} flex items-center gap-2`}>
+      <LineSegments
+        className="w-14 h-14 p-3 bg-[var(--color-primary)] rounded-xl text-[var(--color-white-primary)]"
+        weight="light"
+      />
+      <h3 className="text-3xl font-bold">Trackify</h3>
+    </div>
   );
 }
 
-export default Logo;
+export default logo;

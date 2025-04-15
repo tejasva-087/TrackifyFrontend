@@ -1,9 +1,9 @@
-function link({ children, link, type, className }) {
+function Link({ href, children, className = "" }) {
   return (
-    <a href={link} className={`link link--${type} ${className}`}>
+    <a href={href} className={`${className} block `}>
       {children}
     </a>
   );
 }
 
-export default link;
+export default Link;
